@@ -16,7 +16,8 @@ let project = Project(
 			sources: ["Sources/**"],
 			dependencies: [
 				.target(name: "\(projectName)Interface"),
-				.project(target: "ProductAPIInterface", path: .relativeToRoot("Features/Foundation/ProductAPI"))
+				.project(target: "ProductAPIInterface", path: .relativeToRoot("Features/Foundation/ProductAPI")),
+				.project(target: "DependencyInjection", path: .relativeToRoot("Features/Foundation/Core/DependencyInjection"))
 			]
 		),
 		Target(

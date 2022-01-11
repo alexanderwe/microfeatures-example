@@ -17,6 +17,7 @@ let project = Project(
 			dependencies: [
 				.target(name: "\(projectName)Interface"),
                 .project(target: "NetworkingInterface", path: .relativeToRoot("Features/Foundation/Core/Networking")),
+				.project(target: "DependencyInjection", path: .relativeToRoot("Features/Foundation/Core/DependencyInjection"))
 			]
 		),
 		Target(

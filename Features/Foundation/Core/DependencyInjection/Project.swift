@@ -1,8 +1,8 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let projectName = "Networking"
-let moduleBaseId = "\(workspaceBaseId).networking"
+let projectName = "DependencyInjection"
+let moduleBaseId = "\(workspaceBaseId).dependency-injection"
 
 let project = Project(
 	name: projectName,
@@ -14,17 +14,6 @@ let project = Project(
 			bundleId: moduleBaseId,
 			infoPlist: .default,
 			sources: ["Sources/**"],
-			dependencies: [
-				.target(name: "\(projectName)Interface")
-			]
-		),
-		Target(
-			name: "\(projectName)Interface",
-			platform: .iOS,
-			product: .framework,
-			bundleId: "\(moduleBaseId).interface",
-			infoPlist: .default,
-			sources: ["Interface/**"],
 			dependencies: []
 		),
 		Target(

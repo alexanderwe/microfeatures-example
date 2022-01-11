@@ -18,8 +18,11 @@ let project = Project(
 				"Resources/**",
 			],
 			dependencies: [
+				.project(target: "Networking", path: .relativeToRoot("Features/Foundation/Core/Networking")),
+				.project(target: "ProductAPI", path: .relativeToRoot("Features/Foundation/ProductAPI")),
 				.project(target: "Order", path: .relativeToRoot("Features/Order")),
 				.project(target: "Search", path: .relativeToRoot("Features/Search")),
+				.project(target: "DependencyInjection", path: .relativeToRoot("Features/Foundation/Core/DependencyInjection"))
 			]
 		),
 		Target(

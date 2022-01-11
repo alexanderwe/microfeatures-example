@@ -7,8 +7,12 @@
 
 import OrderInterface
 import ProductAPIInterface
+import DependencyInjection
 
-public class Order: OrderAPI {
-    public init(productAPI: ProductAPI) {}
+public final class OrderService: OrderAPI {
+
+    @Injected var productAPI: ProductAPI
+    
+    public init() {}
 }
 

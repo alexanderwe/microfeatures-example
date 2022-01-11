@@ -1,6 +1,11 @@
 import ProductAPIInterface
 import SearchInterface
+import DependencyInjection
 
-public class Search: SearchAPI {
-    public init(productAPI: ProductAPI) {}
+
+public final class SearchService: SearchAPI {
+    
+    @Injected var productAPI: ProductAPI
+    
+    public init() {}
 }

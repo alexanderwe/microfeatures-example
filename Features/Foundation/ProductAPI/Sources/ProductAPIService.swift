@@ -7,12 +7,13 @@
 
 import ProductAPIInterface
 import NetworkingInterface
+import DependencyInjection
 
-public class ProductAPIImpl: ProductAPI {
-    
-    public init(networking: NetworkingAPI) {
-        
-    }
+public final class ProductAPIService: ProductAPI {
+
+    @Injected var networkingAPI: NetworkingAPI
+
+    public init() { }
 }
 
 
