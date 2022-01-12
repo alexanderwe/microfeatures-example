@@ -1,6 +1,6 @@
 # Microfeature example project
 
-This is an example implementation of the Microfeature architecture showcasing an food ordering application.
+This is an example implementation of the Microfeature architecture showcasing an food ordering application using [tuist](https://tuist.io).
 
 Corresponding blog post: [Scale up your app with Microfeatures](https://alexanderweiss.dev/blog/2022-01-12-scale-up-your-app-with-microfeatures)
 
